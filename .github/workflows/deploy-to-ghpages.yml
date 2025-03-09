@@ -33,7 +33,9 @@ jobs:
           path: ./.cache
           key: ${{ runner.os }}-eleventy-fetch-cache
 
-      - run: npm install
+      - run: |
+          npm install
+          npx @11ty/eleventy
       - run: npm run
 
       - name: Deploy
