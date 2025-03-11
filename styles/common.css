@@ -51,6 +51,7 @@ li {
 
 .ki-container {
   max-width: 71.875rem;
+  padding-inline: 1.5rem;
   margin-inline: auto;
 }
 
@@ -242,6 +243,9 @@ li {
 .mw-wide {
   max-width: 1024px;
 }
+.mw-extra-wide {
+  max-width: 1280px;
+}
 .mx-auto {
   margin-inline: auto;
 }
@@ -321,13 +325,23 @@ li {
   }
 }
 
+.reviewSwiper {
+  max-width: 71.875rem;
+  margin-inline: auto;
+}
 .swiper-slide {
   height: auto;
+}
 
-  a:hover {
-    color: var(--black);
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--black);
+
+  &:hover {
+    color: var(--algae);
   }
 }
+
 
 a {
   text-decoration: underline;
@@ -487,7 +501,7 @@ a {
 
 .ki-experience {
   margin: auto;
-  margin-bottom: 80px;
+  position: relative;
 }
 
 /* Footer */
