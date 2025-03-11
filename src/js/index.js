@@ -3,19 +3,30 @@ var reviewSwiper = new Swiper(".reviewSwiper", {
     el: ".ki-review-pagination",
     clickable: true,
   },
-  rewind: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   slidesPerView: 1,
   spaceBetween: 16,
   breakpoints: {
     767: {
       slidesPerView: 2,
-      spaceBetween: 25,
+      spaceBetween: 24,
       slidesPerGroup: 2,
     },
     991: {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 24,
       slidesPerGroup: 3,
     },
   },
+});
+
+var howSwiper = new Swiper(".howSwiper", {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
 });
