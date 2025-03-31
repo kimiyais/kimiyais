@@ -17,17 +17,6 @@ function toggleNavbar(onlyClose) {
 
 menuHamburger.addEventListener("click", () => toggleNavbar(false));
 
-// Scroll Add Classes
-
-window.addEventListener("scroll", function () {
-  scrollpos = window.scrollY;
-
-  if (scrollpos >= header_height) {
-    add_class_on_scroll();
-  } else {
-    remove_class_on_scroll();
-  }
-});
 
 let closeNavbar = () => {
   // Only close Navbar when clicked
