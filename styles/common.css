@@ -55,10 +55,6 @@ li {
   margin-inline: auto;
 }
 
-.tagline {
-  line-height: 150%;
-}
-
 
 /* remove?? */
 @media (max-width: 991px) {
@@ -221,6 +217,9 @@ li {
 .mb-16 {
   margin-bottom: 1rem;
 }
+.mb-24 {
+  margin-bottom: 1.25rem;
+}
 .mb-32 {
   margin-bottom: 1.75rem;
 }
@@ -271,7 +270,6 @@ li {
 
 .ki-def {
   border: 1px solid var(--white);
-  padding: 80px;
 }
 
 .ki-row {
@@ -283,13 +281,17 @@ li {
 /* ========================================================================== */
 
 .ki-navbar-container {
-  position: fixed;
+  background-color: #fff;
   top: 0;
   left: 0;
   width: 100%;
   transition: background-color 300ms ease-in-out;
   z-index: 1000;
   border-bottom: 0.5px solid var(--gray-2);
+}
+
+.ki-hero__content {
+  padding-inline: 0.65rem;
 }
 
 .ki-navbar {
@@ -343,6 +345,7 @@ li {
 }
 
 
+
 a {
   text-decoration: underline;
   color: var(--gray-2);
@@ -384,6 +387,12 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .ki-def {
+    padding: 5rem;
+  }
+  .ki-hero {
+    min-height: 600px;
+  }
   .ki-navbar--light .ki-navbar__link {
     color: var(--white);;
   }
@@ -398,6 +407,16 @@ a {
 @media screen and (min-width: 768px) {
   .ki-burger {
     display: none;
+  }
+
+  .ki-how-pagination {
+    display: none;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next,
+  .ki-hr-black {
+    display: block;
   }
 
   header {
@@ -420,8 +439,60 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .ki-def {
+    padding: 1.5rem;
+  }
+  .quote-img {
+    position: absolute;
+  }
+  .circle {
+    float: none !important;
+    margin-bottom: 3rem;
+  }
+  .ki-hero {
+    min-height: 400px;
+  }
+  .subtagline {
+    width: 300px;
+  }
+  .ki-how-pagination {
+    display: block;
+  }
+  .swiper-button-prev,
+  .swiper-button-next,
+  .ki-hr-black {
+    display: none;
+  }
+
+  .ki-partners {
+    display: grid;
+    gap: 5.25rem;
+  }
+  .ki-partners-img {
+    width: 100%;
+  }
+
+  .ki-fs-1 {
+    font-size: clamp(4rem, 6vw, 4rem);
+  }
+  .ki-fs-2 {
+    font-size: clamp(3rem, 4vw, 3rem);
+  }
+  .ki-fs-3 {
+    font-size: clamp(1.675rem, 3vw, 2.5rem);
+  }
+  .ki-fs-4 {
+    font-size: clamp(2rem, 4vw, 1.5rem);
+  }
+  .ki-fs-5 {
+    font-size: clamp(1.625rem, 4vw, 1.25rem);
+  }
+  .ki-fs-6 {
+    font-size: clamp(1.5rem, 3.5vw, 1.125rem);
+  }
+
   .ki-navbar__navbar {
-    background-color: var(--white);
+    background-color: #fff;
     position: absolute;
     width: calc(100vw - 3rem);
     height: calc(100vh - 73px);
@@ -433,14 +504,11 @@ a {
     flex-direction: column;
     padding-top: 2.5rem;
   }
+
   .ki-links {
     gap: 2rem;
     flex-direction: column;
     align-items: start;
-  }
-  .ki-navbar__navbar .ki-btn-container,
-  .ki-navbar__navbar .ki-btn {
-    width: calc(100% - 2rem) !important;
   }
 
   .ki-nav-footer {
@@ -449,10 +517,8 @@ a {
     margin-bottom: 2.5rem;
   }
   .ki-navbar-active {
-    background-color: var(--white);
-  }
-  .ki-navbar-active .ki-btn-container {
-    display: block !important;
+    background-color: #fff;
+    position: absolute;
   }
   .ki-navbar-active .ki-burger {
     color: var(--black) !important;
@@ -478,7 +544,7 @@ a {
 }
 
 .ki-navbar-fade-in {
-  background-color: var(--white);
+  background-color: #fff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -491,10 +557,10 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 700px;
   display: flex;
   align-items: center;
 }
+
 
 /* Hero Section  End*/
 
@@ -524,8 +590,16 @@ a {
   .ki-btn-primary {
     width: auto;
   }
+
 }
 @media (min-width: 992px) {
+  .tagline {
+    line-height: 150%;
+  }
+  .subtagline {
+    width: 500px;
+  }
+
   .ki-footer {
     padding-block: 2.5rem;
   }
@@ -580,6 +654,11 @@ ul {
   transform: translate(-50%, -50%);
   width: clamp(3rem, 3vw, 8.75rem);
 }
+
+.quote-img {
+  width: 40px;
+  content:url(../assets/images/quote.png);
+}
 .swiper-pagination {
   position: relative;
   padding-bottom: 0;
@@ -592,7 +671,7 @@ ul {
   width: 16px;
   height: 16px;
   transition: all 300ms ease-in-out;
-  margin: 12px !important;
+  margin: 8px !important;
   background: var(--gray-3);
 
   &:hover {
@@ -601,9 +680,8 @@ ul {
   }
 }
 .swiper-pagination-bullet-active {
-  background: var(--sunshine);
+  background: var(--algae);
 }
-.ki-partners,
 .ki-process,
 .ki-impact {
   display: grid;
@@ -659,7 +737,11 @@ ul {
 }
 
 @media (min-width: 992px) {
+  .ki-partners-img {
+    width: 70%;
+  }
   .ki-partners {
+    display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     column-gap: 5rem;
   }

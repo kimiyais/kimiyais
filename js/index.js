@@ -24,9 +24,13 @@ var reviewSwiper = new Swiper(".reviewSwiper", {
 });
 
 var howSwiper = new Swiper(".howSwiper", {
-  slidesPerView: 1,
+  pagination: {
+    el: ".ki-how-pagination",
+    clickable: true,
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  }
+  },
+  slidesPerView: 1,
 });

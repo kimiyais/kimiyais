@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <nav class="ki-navbar-container ki-bg-white">
+    <nav class="ki-navbar-container">
       <div class="ki-container">
         <header class="ki-navbar">
           <a class="ki-navbar__logo" href="/">
@@ -51,10 +51,11 @@
       class="ki-hero text-center"
       style="background: url('./assets/images/hero.png') center; background-size: cover;"> 
       <div class="ki-container">
-        <h1 class="ki-text-white ki-fs-1 tagline fw-600">
-          Change <span class="ki-text-sunshine">that lasts.</span>
-        </h1>
-        <img src="./assets/images/subtagline.png" width="500" alt="transformation = innovation + people" />
+        <div class="ki-hero__content">
+          <h1 class="ki-text-white ki-fs-1 tagline fw-600">
+            Change <span class="ki-text-sunshine">that lasts.</span>
+          </h1>
+        </div>
       </div>
     </section>
 
@@ -105,7 +106,7 @@
     </section>    
 
 
-    <section id="partners" class="ki-py-160 ki-bg-gray"> 
+    <section id="partners" class="ki-py-160 ki-bg-white"> 
       <div class="ki-container">
 
         <div class="mw-standard mx-auto text-center mb-96">
@@ -114,7 +115,7 @@
           the ones you do.</h3>
           <a class="ki-btn ki-btn-primary ki-fs-6 text-decoration-none fw-400 mb-48" href="#contact">Say hello</a>
           <div class="mt-96">
-            <img src='./assets/images/partners.png')>
+            <img class="ki-partners-img" src='./assets/images/partners.png')>
           </div>
         </div>
 
@@ -359,9 +360,8 @@
         </div>
       </div>
 
-      <div class="ki-container ki-py-160">
-        <div class="mw-wide mx-auto mb-96">
-
+      <div class="ki-container mt-96">
+        <div class="mw-wide mx-auto">
         <div class="row mb-96"> 
           <div class="ki-process fw-300">
             <div class="process-about">
@@ -395,7 +395,7 @@
             </div>
           </div>
         </div>
-        <div class="row mb-96"> 
+        <div class="row"> 
           <div class="ki-process fw-300">
             <div class="process-about">
               <div class="circle text-center mx-auto">
@@ -426,6 +426,7 @@
     <section id="how" class="ki-py-160">
       <div class="ki-container">
         <div class="swiper howSwiper mw-wide">
+
           <div class="swiper-wrapper ki-fs-6 fw-300">
             <div class="swiper-slide">
               <div class="mw-standard mx-auto">
@@ -440,6 +441,13 @@
                 <p class="ki-fs-6 mb-48">&mdash; Tech company</p>
               </div>
             </div>
+
+            <div class="swiper-slide">
+              <div class="mw-standard mx-auto">
+                <h2 class="ki-fs-2 fw-700 mb-48 ki-text-black">How might a design org change from service to partner?</h2>
+                <p class="ki-fs-6 mb-48">&mdash; Tech company</p>
+              </div>
+            </div> 
             
             <div class="swiper-slide">
               <div class="mw-standard mx-auto">
@@ -447,17 +455,12 @@
                 <p class="ki-fs-6 mb-48">&mdash; Tech company</p>
               </div>
             </div> 
-            
-            <div class="swiper-slide">
-              <div class="mw-standard mx-auto">
-                <h2 class="ki-fs-2 fw-700 mb-48 ki-text-black">How might a design org change from service to partner?</h2>
-                <p class="ki-fs-6 mb-48">&mdash; Tech company</p>
-              </div>
-            </div> 
           </div>
+            <div class="swiper-pagination ki-how-pagination p-24 mb-48"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
+
         <div class="ki-hr-black mw-standard mx-auto"></div>
         <p class="ki-fs-6 mb-48 mt-48 mw-standard mx-auto">
           We’re experts at guiding teams to navigate uncertainty and complexity in product
@@ -479,10 +482,10 @@
 
         <!-- Swiper -->
         <div class="swiper reviewSwiper mw-extra-wide">
-          <div class="swiper-wrapper ki-fs-6 fw-300">
+          <div class="swiper-wrapper ki-fs-6 fw-300 mb-48">
               <div class="swiper-slide">
                 <div class="d-flex gap-8">
-                  <div><img width="40" src="./assets/images/quote.png" alt="..." /></div>
+                  <div><img class="quote-img"/></div>
                   <div>
                     <p class="mb-32">
                     As a startup founder and CEO, and public company exec, Tina was one of my most
@@ -499,7 +502,7 @@
 
               <div class="swiper-slide">
                 <div class="d-flex gap-8">
-                  <div><img width="40" src="./assets/images/quote.png" alt="..." /></div>
+                  <div><img class="quote-img"/></div>
                   <div>
                     <p class="mb-32">
                     Eric possesses deep knowledge, keen perception, and an uncanny ability to
@@ -518,7 +521,7 @@
 
               <div class="swiper-slide">
                 <div class="d-flex gap-8">
-                  <div><img width="40" src="./assets/images/quote.png" alt="..." /></div>
+                  <div><img class="quote-img"/></div>
                   <div>
                     <p class="mb-32">
                     Tina transformed how our team developed new product directions. Previously we
@@ -536,7 +539,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="d-flex gap-8">
-                  <div><img width="40" src="./assets/images/quote.png" alt="..." /></div>
+                  <div><img class="quote-img"/></div>
                   <div>
                     <p class="mb-32">
                       Tina’s history as an engineer and a designer at start-ups have shaped her into
@@ -552,7 +555,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="d-flex gap-8">
-                  <div><img width="40" src="./assets/images/quote.png" alt="..." /></div>
+                  <div><img class="quote-img"/></div>
                   <div>
                     <p class="mb-32">
                       You cared for your peers and led with empathy. Consistently you demonstrated
@@ -565,7 +568,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="d-flex gap-8">
-                  <div><img width="40" src="./assets/images/quote.png" alt="..." /></div>
+                  <div><img class="quote-img"/></div>
                   <div>
                     <p class="mb-32">
                       Tina played a pivotal role in my professional and personal development. Tina
@@ -586,7 +589,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="d-flex gap-8">
-                  <div><img width="40" src="./assets/images/quote.png" alt="..." /></div>
+                  <div><img class="quote-img"/></div>
                   <div>
                     <p class="mb-32">
                       Eric’s gift lies in his rare balance of profound intuition and unwavering
@@ -606,7 +609,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="d-flex gap-8">
-                  <div><img width="40" src="./assets/images/quote.png" alt="..." /></div>
+                  <div><img class="quote-img"/></div>
                   <div>
                     <p class="mb-32">
                       I’ve never met anyone quite like Tina, how she infects and affects our small
@@ -619,7 +622,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="d-flex gap-8">
-                  <div><img width="40" src="./assets/images/quote.png" alt="..." /></div>
+                  <div><img class="quote-img"/></div>
                   <div>
                     <p class="mb-32">
                       Tina unlocked something in me. In a few short months, I’ve grown more as a
@@ -637,7 +640,7 @@
 
               <div class="swiper-slide">
                 <div class="d-flex gap-8">
-                  <div><img width="40" src="./assets/images/quote.png" alt="..." /></div>
+                  <div><img class="quote-img"/></div>
                   <div>
                     <p class="mb-32">
                       Working with Tina was a transformative experience, particularly in terms of
