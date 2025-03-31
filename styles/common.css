@@ -281,13 +281,13 @@ li {
 /* ========================================================================== */
 
 .ki-navbar-container {
-  background-color: #fff;
   top: 0;
   left: 0;
   width: 100%;
   transition: background-color 300ms ease-in-out;
   z-index: 1000;
   border-bottom: 0.5px solid var(--gray-2);
+  background-color: #fff;
 }
 
 .ki-hero__content {
