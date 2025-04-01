@@ -524,7 +524,7 @@ a {
   }
   .ki-navbar-active {
     background-color: #fff;
-    position: absolute;
+    position: fixed;
   }
   .ki-navbar-active .ki-burger {
     color: var(--black) !important;
