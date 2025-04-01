@@ -95,6 +95,9 @@ li {
   font-size: clamp(1.625rem, 3.5vw, 1.125rem);
 }
 
+.ki-text-eden {
+  color: var(--eden);
+}
 .ki-text-sunshine {
   color: var(--sunshine);
 }
