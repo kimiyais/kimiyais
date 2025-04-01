@@ -577,6 +577,12 @@ a {
   position: relative;
 }
 
+.ki-contact {
+  .ki-email {
+    padding-top: 5rem;
+  }
+}
+
 /* Footer */
 .ki-footer {
   padding-block: 2.5rem;
@@ -609,17 +615,6 @@ a {
 
   .ki-footer {
     padding-block: 2.5rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .ki-btn,
-  .ki-form__email {
-    border-radius: 4px;
-  }
-  .ki-form {
-    flex-direction: column;
-    gap: 0.5rem;
   }
 }
 
