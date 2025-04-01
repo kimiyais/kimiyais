@@ -281,6 +281,7 @@ li {
 /* ========================================================================== */
 
 .ki-navbar-container {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -313,6 +314,7 @@ li {
 .ki-navbar__nav {
   display: none;
 }
+
 
 .ki-links {
   display: flex;
@@ -364,6 +366,10 @@ a {
   font-weight: 400;
   text-transform: uppercase;
 }
+
+.ki-navbar__link.ki-navbar-active {
+    color: var(--sunshine);
+  }
 
 .ki-navbar__link-active,
 .ki-navbar__link:hover {
@@ -554,6 +560,7 @@ a {
 
 /* Hero Section Start */
 .ki-hero {
+  margin-top: 88px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -693,6 +700,7 @@ ul {
 }
 
 .circle {
+  background: var(--white);
   height: 240px;
   width: 240px;
   border: 10px solid #eee;
