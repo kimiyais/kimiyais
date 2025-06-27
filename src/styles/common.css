@@ -448,6 +448,9 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .framework-img {
+    padding: 5rem 0 !important;
+  }
   .ki-def {
     padding: 1.5rem;
   }
@@ -660,6 +663,12 @@ ul {
   width: clamp(3rem, 3vw, 8.75rem);
 }
 
+.framework-img {
+  padding: 10rem 0;
+  width: 100%;
+  content:url(../assets/images/framework.png);
+  text-align: center;
+}
 .quote-img {
   width: 40px;
   content:url(../assets/images/quote.png);
